@@ -1,0 +1,17 @@
+
+
+
+# ignore all files in the node_modules/ directory
+node_modules/
+
+# ignore all files in the .idea/ directory
+.idea/
+
+# ignore all files in the bower_components/ directory
+bower_components/
+
+# ignore all files in the css/vendor directory
+# css/vendor/**/*.css
+
+# ignore all files in the js/vendor directory
+# js/vendor/**/*.js

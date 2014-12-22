@@ -1,0 +1,80 @@
+@import "bootstrap.less";
+/* rounded corners */
+@myradius: 10px;
+
+.roundTopCorners{
+  .border-top-radius(@myradius);
+}
+
+.roundLeftCorners{
+  .border-left-radius(@myradius);
+}
+
+.roundRightCorners{
+  .border-right-radius(@myradius);
+}
+
+.roundBottomCorners{
+  .border-bottom-radius(@myradius);
+}
+
+.roundAllCorners{
+  .border-top-radius(@myradius);
+  .border-bottom-radius(@myradius);
+}
+
+
+@topPadding: 15px;
+@bottomPadding: 15px;
+@backgroundColor: rgba(86,61,124,.15);
+@border: 1px solid rgba(86,61,124,.2);
+
+@backgroundColor2: #592ae7;
+@border2: 1px solid #3708c5;
+@colorWhite: #fff;
+
+/** fix the semantic row/column generation */
+article {
+  .make-row(@grid-gutter-width);
+}
+
+article div.item3 {
+  .make-md-column(3, @grid-gutter-width);
+}
+
+article div.item4 {
+  .make-md-column(4, @grid-gutter-width);
+}
+article div.item6 {
+  .make-md-column(6, @grid-gutter-width);
+}
+article div.item8 {
+  .make-md-column(8, @grid-gutter-width);
+}
+
+aside {
+  .make-row(@grid-gutter-width);
+}
+
+aside div.span6 {
+  .make-md-column(6, @grid-gutter-width);
+}
+
+.standardColumnDetails
+{
+  background-color: @backgroundColor;
+  border: @border;
+  padding-top: @topPadding;
+  padding-bottom: @bottomPadding;
+}
+
+.awesomeColumnDetails
+{
+  background-color: @backgroundColor2;
+  border: @border2;
+  padding-top: @topPadding;
+  padding-bottom: @bottomPadding;
+  color: @colorWhite;
+}
+
+
