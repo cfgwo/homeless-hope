@@ -15,3 +15,6 @@ bower_components/
 
 # ignore all files in the js/vendor directory
 # js/vendor/**/*.js
+
+# ignore all files in the js/vendor directory
+assets/less/bootstrap

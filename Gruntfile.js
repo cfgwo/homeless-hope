@@ -156,7 +156,8 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-ng-annotate');
 
     grunt.registerTask('copy', ['bowercopy']);
-    grunt.registerTask('default', ['concat', 'uglify:dynamic_mappings', 'less','cssmin','watch']);
+    grunt.registerTask('default', ['concat', 'less', 'watch']);
+    grunt.registerTask('min', ['concat', 'uglify:dynamic_mappings', 'less','cssmin','watch']);
     grunt.registerTask('dist-less', ['less','cssmin']);
     grunt.registerTask('dist-js', ['uglify:dynamic_mappings']);
     grunt.registerTask('dist-watch', ['watch']);

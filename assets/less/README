@@ -1,0 +1,3 @@
+- grunt copy
+- auto find and replace import path with "bootstrap/" in bootstrap.js
+- grunt
